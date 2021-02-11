@@ -1,0 +1,382 @@
+/* PAGE RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/*  ----- PAGE DESIGN PART ----- */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* Total width will include paddings and borders */
+  font-size: 62.5%;
+  /* defining 1rem = 10px */
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto Slab', serif;
+  position: relative;
+}
+
+/*-------------------------------------
+---------------------------------------
+----- SECTION 1 - Header + Navbar -----
+---------------------------------------
+-------------------------------------*/
+#section1 {
+  height: 100vh;
+  background-image: url(/img/sirop-soc-top.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+  position: relative;
+}
+
+#section1 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.5rem 5rem;
+}
+
+#section1 nav .nav-btn {
+  color: #464646;
+  text-decoration: none;
+}
+
+#section1 nav .nav-btn:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+#section1 .center-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#section1 .center-title span {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  margin: 1rem 3px;
+  background-color: #fff;
+  color: #476e9a;
+  display: inline-block;
+}
+
+#section1 .center-title span:hover {
+  -webkit-transform: translateY(-1rem) scale(1.2);
+          transform: translateY(-1rem) scale(1.2);
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+
+#section1 .center-title h1 {
+  font-family: 'Roboto Slab';
+  font-size: 2.5rem;
+  color: #476e9a;
+  letter-spacing: 1.7rem;
+  margin: 1rem 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+#section1 .center-title h1:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+
+#section1 .social-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 8rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+}
+
+#section1 .social-btn div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section1 .social-btn div a {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #d3d7e1;
+  -webkit-box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  margin: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section1 .social-btn div a:hover {
+  background-color: #3c3c3c;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+#section1 .social-btn div a:hover i {
+  color: #ebe9e9;
+}
+
+#section1 .social-btn div a:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#section1 .social-btn div a i {
+  color: #3c3c3c;
+  font-size: 12px;
+}
+
+#section1 .arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  -webkit-animation: arrow-move 2s infinite;
+          animation: arrow-move 2s infinite;
+}
+
+@-webkit-keyframes arrow-move {
+  50% {
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
+  }
+}
+
+@keyframes arrow-move {
+  50% {
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
+  }
+}
+
+/*-------------------------------------
+---------------------------------------
+------- SECTION 2 - DESPRE NOI -------
+---------------------------------------
+-------------------------------------*/
+#section2 {
+  background-color: #000;
+  position: relative;
+  margin-top: 0;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+}
+
+#section2 #about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#section2 #about-us h1 {
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+  color: #fff;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+#section2 #about-us p {
+  color: #c7c7c7;
+  font-family: 'Roboto';
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 90%;
+  margin-bottom: 3rem;
+}
+
+#section2 .about-us-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding: 1rem;
+  padding-bottom: 13rem;
+}
+
+#section2 .about-us-cards div {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  margin: 2rem;
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: .5rem;
+}
+
+#section2 .about-us-cards div h3 {
+  margin-bottom: 2rem;
+}
+
+#section2 .about-us-cards div p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+/*-------------------------------------
+---------------------------------------
+------- SECTION 3 - PRODUSE -------
+---------------------------------------
+-------------------------------------*/
+#section3 h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 5rem 0;
+}
+
+#section3 .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#section3 .products .products-card {
+  position: relative;
+  width: 40rem;
+  margin: 1rem;
+  border-radius: .5rem;
+  -webkit-box-shadow: 1px 1px 2px #3c3c3c;
+          box-shadow: 1px 1px 2px #3c3c3c;
+  overflow: hidden;
+}
+
+#section3 .products .products-card .products-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#section3 .products .products-card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(60, 60, 60, 0.4);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+#section3 .products .products-card .overlay .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+#section3 .products .products-card:hover .overlay {
+  height: 100%;
+}
+
+#section3 .products .products-card:hover {
+  -webkit-animation: shadowmove 3s infinite;
+          animation: shadowmove 3s infinite;
+}
+
+@-webkit-keyframes shadowmove {
+  50% {
+    -webkit-box-shadow: 7px 7px 10px #3c3c3c;
+            box-shadow: 7px 7px 10px #3c3c3c;
+  }
+}
+
+@keyframes shadowmove {
+  50% {
+    -webkit-box-shadow: 7px 7px 10px #3c3c3c;
+            box-shadow: 7px 7px 10px #3c3c3c;
+  }
+}
+/*# sourceMappingURL=main.css.map */
