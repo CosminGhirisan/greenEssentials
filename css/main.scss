@@ -404,3 +404,51 @@ body {
     }
   }
 }
+
+/*-------------------------------------
+---------------------------------------
+--------- SECTION 5 - CONTACT ---------
+---------------------------------------
+-------------------------------------*/
+#section5 {
+  .container-contact {
+    width: 80%;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  p {
+    margin: 0.5rem 0;
+    font-size: 1.7rem;
+    text-align: center;
+    line-height: 4.5rem;
+    color: rgba(60, 60, 60, 0.4);
+
+    span {
+      color: rgb(210, 180, 140);
+    }
+
+    .span-small {
+      font-size: 2.3rem;
+      font-weight: 300;
+    }
+
+    .span-big {
+      font-size: 2.8rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+  }
+}
