@@ -43,13 +43,15 @@ body {
       a {
         color: #fff;
         text-decoration: none;
-        letter-spacing: 1px;
         text-transform: uppercase;
-        transition: all 0.3s ease;
+        letter-spacing: 1px;
+        transition: 1s all ease-in-out;
       }
 
       &:hover {
-        transform: scale(1.05);
+        transform: scale(1.02);
+        padding-bottom: 0.2rem;
+        border-bottom: 1px solid #476e9a;
       }
     }
   }
@@ -283,7 +285,7 @@ body {
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: rgba(60, 60, 60, 0.4);
+        background-color: rgba(60, 60, 60, 0.6);
         overflow: hidden;
         width: 100%;
         height: 0;
@@ -298,7 +300,34 @@ body {
           -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-          white-space: nowrap;
+          width: 35rem;
+          text-align: center;
+
+          h2 {
+            margin-bottom: 1rem;
+            font-weight: 200;
+            text-transform: uppercase;
+          }
+
+          p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            padding: 1rem 0;
+          }
+
+          a {
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 1.4rem;
+            padding: 0.3rem 1.5rem;
+            margin-top: 1rem;
+            border: 1px solid rgb(210, 180, 140);
+            border-radius: 1rem;
+
+            &:hover {
+              background-color: rgba(210, 180, 140, 0.5);
+            }
+          }
         }
       }
 
@@ -308,6 +337,66 @@ body {
 
       &:hover {
         animation: shadowmove 3s infinite;
+      }
+
+      .close-modal-product {
+        position: absolute;
+        top: 1.2rem;
+        right: 2rem;
+        font-size: 5rem;
+        color: gray;
+        opacity: 0.8;
+        cursor: pointer;
+        border: none;
+        background: none;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .modal-product {
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        max-height: 80%;
+        background-color: rgba(#fff, 0.8);
+        padding: 6rem;
+        border-radius: 1rem;
+        z-index: 18;
+        color: gray;
+        overflow: scroll;
+
+        @media only screen and (max-width: 992px) {
+          width: 95%;
+          padding: 4rem;
+          font-size: 1.4rem;
+          letter-spacing: normal;
+        }
+
+        h3 {
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-weight: 300;
+          text-align: justify;
+          letter-spacing: 1px;
+          margin: 1rem 0;
+        }
+      }
+
+      .overlay-modal-product {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(gray, 0.6);
+        backdrop-filter: blur(5px);
+        z-index: 17;
       }
     }
   }
@@ -417,38 +506,131 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
 
-  h2 {
-    font-size: 2.8rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-  }
-
-  p {
-    margin: 0.5rem 0;
-    font-size: 1.7rem;
-    text-align: center;
-    line-height: 4.5rem;
-    color: rgba(60, 60, 60, 0.4);
-
-    span {
-      color: rgb(210, 180, 140);
-    }
-
-    .span-small {
-      font-size: 2.3rem;
-      font-weight: 300;
-    }
-
-    .span-big {
+    h2 {
       font-size: 2.8rem;
-      font-weight: 500;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
+      letter-spacing: 2px;
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
     }
+
+    p {
+      margin: 0.5rem 0;
+      font-size: 1.7rem;
+      text-align: center;
+      line-height: 4.5rem;
+      color: rgba(60, 60, 60, 0.4);
+
+      span {
+        color: rgb(210, 180, 140);
+      }
+
+      .span-small {
+        font-size: 2.3rem;
+        font-weight: 300;
+      }
+
+      .span-big {
+        font-size: 2.8rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+      color: #fff;
+      background-color: rgb(210, 180, 140);
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid rgb(210, 180, 140);
+      transition: 0.3s all ease;
+
+      &:hover {
+        color: rgb(210, 180, 140);
+        background-color: #fff;
+      }
+
+      &:active {
+        transform: scale(0.98);
+      }
+    }
+
+    .close-modal-form {
+      position: absolute;
+      top: 1.2rem;
+      right: 2rem;
+      font-size: 5rem;
+      color: gray;
+      opacity: 0.8;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .modal-form {
+      position: fixed;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 70%;
+      max-height: 80%;
+      background-color: rgba(#fff, 0.8);
+      padding: 6rem;
+      border-radius: 1rem;
+      z-index: 18;
+      color: gray;
+      overflow: scroll;
+
+      @media only screen and (max-width: 992px) {
+        width: 95%;
+        padding: 4rem;
+        font-size: 1.4rem;
+        letter-spacing: normal;
+      }
+
+      h3 {
+      }
+
+      p {
+        font-weight: 300;
+        text-align: justify;
+        letter-spacing: 1px;
+        margin: 0.5rem 0;
+      }
+    }
+
+    .overlay-modal-form {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(gray, 0.6);
+      backdrop-filter: blur(5px);
+      z-index: 17;
+    }
+  }
+}
+
+/*-------------------------------------
+---------------- FOOTER ---------------
+---------------------------------------
+-------------------------------------*/
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #000;
+  p {
+    color: #fff;
+    font-size: 1.2rem;
   }
 }

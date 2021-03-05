@@ -10,7 +10,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-      <link rel="icon" href="img/icon.png" type="image/text">
+      <link rel="icon" href="./img/icon.png" type="image/text">
       <link rel="stylesheet" type="text/css" href="css/main.css">
       
       <script src="https://kit.fontawesome.com/4b2f15bc3a.js" crossorigin="anonymous"></script>
@@ -19,14 +19,6 @@
       
       <section id="section1"><!--SECTION 1 - HEADER + NAVBAR-->
          <header>
-            <nav>
-               <div class="logo">
-                  <img src="img/icon.png" alt="logo" href="index.html" width="50px">
-               </div>
-               <div class="nav-btn">
-                  <a href="#section5">Contact</a>
-               </div>
-            </nav>
             <div class="center-title">
                <div>
                   <span class="span">G</span>
@@ -84,27 +76,64 @@
             <div class="products-card">
                <img src="img/sirop-soc-top.jpeg" alt="sirop" class="products-img">
                <div class="overlay">
-                  <div class="text">Hello World</div>
+                  <div class="text">
+                     <h2>Sirop de soc</h2>
+                     <p>Siropul de soc este unul dintre siropurile noastre preferate. Cu o experienta de peste 6 ani in productia acestui sirop, garantam un gust aparte, care te va face sa iti doresti sa-l savurezi din nou si din nou.</p>
+                     <a class="show-modal-product">Detalii</a>
+                  </div>
                </div>
+
+               <div class="modal-product hidden">
+                  <button class="close-modal-product">&times;</button>
+                  <h3>Sirop</h3>
+                  <p>
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, consectetur.
+                  </p>
+               </div>
+               <div class="overlay-modal-product hidden"></div>
             </div>
+
             <div class="products-card">
-               <img src="img/sirop-menta.jpeg" alt="sirop" class="products-img">
+               <img src="./img/sirop-menta.jpeg" alt="sirop" class="products-img">
                <div class="overlay">
-                  <div class="text">Hello World</div>
+                  <div class="text">
+                     <h2>Sirop de menta</h2>
+                     <p>Siropul de menta este unul dintre siropurile noastre preferate. Cu o experienta de peste 2 ani in productia acestui sirop, garantam un gust aparte, care te va face sa iti doresti sa-l savurezi din nou si din nou.</p>
+                     <a class="show-modal-product">Detalii</a>
+                  </div>
                </div>
+
+               <div class="modal-product hidden">
+                  <button class="close-modal-product">&times;</button>
+                  <h3>Sirop de menta</h3>
+                  <p>
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, consectetur.
+                  </p>
+               </div>
+               <div class="overlay-modal-product hidden"></div>
             </div>
+
             <div class="products-card">
-               <img src="img/sirop-brad-argintiu.jpeg" alt="sirop" class="products-img">
+               <img src="./img/sirop-brad-argintiu.jpeg" alt="sirop" class="products-img">
                <div class="overlay">
-                  <div class="text">Hello World</div>
+                  <div class="text">
+                     <h2>Sirop de brad argintiu</h2>
+                     <p>Siropul de brad argintiu este unul dintre siropurile noastre preferate. Cu o experienta de peste 6 ani in productia acestui sirop, garantam un gust aparte, care te va face sa iti doresti sa-l savurezi din nou si din nou.</p>
+                     <a class="show-modal-product">Detalii</a>
+                  </div>
                </div>
-            </div>
-            <div class="products-card">
-               <img src="img/sirop-soc-top.jpeg" alt="sirop" class="products-img">
-               <div class="overlay">
-                  <div class="text">Hello World</div>
+
+               <div class="modal-product hidden">
+                  <button class="close-modal-product">&times;</button>
+                  <h3>Sirop de brad argintiu</h3>
+                  <p>
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, consectetur.
+                  </p>
                </div>
+               <div class="overlay-modal-product hidden"></div>
             </div>
+
+
          </div>
       </section><!--SECTION 3 - PRODUSE-->
 
@@ -140,8 +169,22 @@
          <div class="container-contact">
             <h2>CONTACT</h2>
             <p>Doresti <span class="span-small">sa incerci</span> produsele noastre? Sau <span class="span-small">sa comanzi</span> din nou? Esti <span class="span-small">distribuitor</span> si doresti sa incepem o colaborare? <span class="span-big">Contacteaza-ne</span> telefonic, prin email sau completeaza formularul de mai jos pentru a plasa o comanda</p>
-            <a href="#">Formular de comanda</a>
+            <a class="show-modal-form">Formular de comanda</a>
+
+            <div class="modal-form hidden">
+               <button class="close-modal-form">&times;</button>
+               <h3>Formular de comanda</h3>
+               <p>
+                  Completeaza formularul de mai jos pentru a ne transmite comanda:
+               </p>
+            </div>
+            <div class="overlay-modal-form hidden"></div>
          </div>
       </section><!--SECTION 5 - CONTACT-->
+
+      <footer>
+         <p>Copyright &copy 2021 Cosmin Ghirisan. All rights reserved </p>
+      </footer>
+      <script src="./app.js"></script>
    </body>
 </html>
