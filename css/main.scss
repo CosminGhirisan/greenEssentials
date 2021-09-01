@@ -597,14 +597,40 @@ body {
         letter-spacing: normal;
       }
 
-      h3 {
-      }
-
       p {
         font-weight: 300;
         text-align: justify;
         letter-spacing: 1px;
         margin: 0.5rem 0;
+
+        @media only screen and (max-width: 992px) {
+          letter-spacing: normal;
+          line-height: normal;
+        }
+      }
+
+      .form-container {
+        form {
+          input,
+          textarea {
+            width: 50rem;
+            padding: 1rem;
+            margin: 5px 0 20px 0;
+            display: inline-block;
+            border: none;
+            background: #ddd;
+            border-radius: 0.3rem;
+
+            @media only screen and (max-width: 992px) {
+              width: 100%;
+            }
+          }
+
+          textarea {
+            max-width: 100%;
+            height: 10rem;
+          }
+        }
       }
     }
 
