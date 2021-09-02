@@ -715,13 +715,13 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 70%;
+  width: 60rem;
   max-height: 80%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(58, 59, 60, 0.9);
   padding: 6rem;
   border-radius: 1rem;
   z-index: 18;
-  color: gray;
+  color: #fff;
   overflow: scroll;
 }
 
@@ -739,6 +739,7 @@ body {
   text-align: justify;
   letter-spacing: 1px;
   margin: 0.5rem 0;
+  color: #fff;
 }
 
 @media only screen and (max-width: 992px) {
@@ -769,6 +770,25 @@ body {
 #section5 .container-contact .modal-form .form-container form textarea {
   max-width: 100%;
   height: 10rem;
+}
+
+#section5 .container-contact .modal-form .form-container form #submit-btn {
+  width: 10rem;
+  color: #fff;
+  background-color: tan;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+#section5 .container-contact .modal-form .form-container form #submit-btn:hover {
+  color: tan;
+  background-color: #ddd;
+}
+
+#section5 .container-contact .modal-form .form-container form #submit-btn:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
 }
 
 #section5 .container-contact .overlay-modal-form {

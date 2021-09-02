@@ -181,16 +181,16 @@
                   <form action="">
                      <p>1. Informatii pentru livrare:</p>
                      <label for="nume">Nume:</label> <br>
-                     <input type="text" name="nume" placeholder=""> <br>
+                     <input type="text" name="nume" placeholder="" required> <br>
 
                      <label for="adresa">Adresa:</label> <br>
-                     <input type="text" name="adresa" placeholder="Adresa completa (str. nr. ap.)"> <br>
+                     <input type="text" name="adresa" placeholder="Adresa completa (str. nr. ap.)" required> <br>
 
                      <label for="oras">Oras:</label> <br>
-                     <input type="text" name="oras" placeholder=""> <br>
+                     <input type="text" name="oras" placeholder="" required> <br>
 
                      <label for="judet">Judet:</label> <br>
-                     <input type="text" name="judet" placeholder=""> <br>
+                     <input type="text" name="judet" placeholder="" required> <br>
 
                      <label for="telefon">Telefon:</label> <br>
                      <input type="number" name="telefon" placeholder="" required> <br>
@@ -207,8 +207,9 @@
 
                      <p>3. Alte informatii:</p>
                      <label for="telefon">Observatii sau alte informatii:</label> <br>
-                     <textarea type="textarea" name="telefon" placeholder="Lasa-ne mesajul tau aici..." ></textarea>
+                     <textarea type="textarea" name="telefon" placeholder="Lasa-ne mesajul tau aici..." ></textarea> <br>
 
+                     <input id="submit-btn" type="submit" value="Submit">
                   </form>
                </div>
             </div>

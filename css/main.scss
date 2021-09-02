@@ -581,13 +581,13 @@ body {
       top: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 70%;
+      width: 60rem;
       max-height: 80%;
-      background-color: rgba(#fff, 0.8);
+      background-color: rgba(#3a3b3c, 0.9);
       padding: 6rem;
       border-radius: 1rem;
       z-index: 18;
-      color: gray;
+      color: #fff;
       overflow: scroll;
 
       @media only screen and (max-width: 992px) {
@@ -602,6 +602,7 @@ body {
         text-align: justify;
         letter-spacing: 1px;
         margin: 0.5rem 0;
+        color: #fff;
 
         @media only screen and (max-width: 992px) {
           letter-spacing: normal;
@@ -629,6 +630,24 @@ body {
           textarea {
             max-width: 100%;
             height: 10rem;
+          }
+
+          #submit-btn {
+            width: 10rem;
+            color: #fff;
+            background-color: rgb(210, 180, 140);
+            cursor: pointer;
+            font-size: 1.6rem;
+            font-weight: 600;
+
+            &:hover {
+              color: rgb(210, 180, 140);
+              background-color: #ddd;
+            }
+
+            &:active {
+              transform: scale(0.98);
+            }
           }
         }
       }
