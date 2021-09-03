@@ -36,43 +36,18 @@ body {
   background-repeat: no-repeat;
   margin-bottom: 0;
   position: relative;
-}
-
-#section1 nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2.5rem 5rem;
-}
-
-#section1 nav .nav-btn a {
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  -webkit-transition: 1s all ease-in-out;
-  transition: 1s all ease-in-out;
-}
-
-#section1 nav .nav-btn:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-  padding-bottom: 0.2rem;
-  border-bottom: 1px solid #476e9a;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #section1 .center-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,6 +85,7 @@ body {
   letter-spacing: 1.7rem;
   margin: 1rem 0;
   padding: 0;
+  padding-left: 1.7rem;
   font-weight: 300;
 }
 
@@ -121,12 +97,15 @@ body {
 }
 
 #section1 .social-btn {
-  position: absolute;
-  left: 50%;
-  bottom: 8rem;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #section1 .social-btn div {
@@ -180,29 +159,24 @@ body {
 }
 
 #section1 .arrow {
-  position: absolute;
-  left: 50%;
-  bottom: 3rem;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   text-align: center;
   color: #fff;
   font-size: 3rem;
-  -webkit-animation: arrow-move 2s infinite;
-          animation: arrow-move 2s infinite;
+  -webkit-animation: arrow-move 4s infinite;
+          animation: arrow-move 4s infinite;
 }
 
 @-webkit-keyframes arrow-move {
   50% {
-    -webkit-transform: translate(-50%, 2rem);
-            transform: translate(-50%, 2rem);
+    -webkit-transform: translate(0%, 4rem);
+            transform: translate(0%, 4rem);
   }
 }
 
 @keyframes arrow-move {
   50% {
-    -webkit-transform: translate(-50%, 2rem);
-            transform: translate(-50%, 2rem);
+    -webkit-transform: translate(0%, 4rem);
+            transform: translate(0%, 4rem);
   }
 }
 
@@ -718,6 +692,7 @@ body {
   width: 60rem;
   max-height: 80%;
   background-color: rgba(58, 59, 60, 0.9);
+  letter-spacing: normal;
   padding: 6rem;
   border-radius: 1rem;
   z-index: 18;
@@ -730,7 +705,6 @@ body {
     width: 95%;
     padding: 4rem;
     font-size: 1.4rem;
-    letter-spacing: normal;
   }
 }
 
@@ -740,13 +714,7 @@ body {
   letter-spacing: 1px;
   margin: 0.5rem 0;
   color: #fff;
-}
-
-@media only screen and (max-width: 992px) {
-  #section5 .container-contact .modal-form p {
-    letter-spacing: normal;
-    line-height: normal;
-  }
+  line-height: normal;
 }
 
 #section5 .container-contact .modal-form .form-container form input,

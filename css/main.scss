@@ -32,35 +32,11 @@ body {
   background-repeat: no-repeat;
   margin-bottom: 0;
   position: relative;
-
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2.5rem 5rem;
-
-    .nav-btn {
-      a {
-        color: #fff;
-        text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        transition: 1s all ease-in-out;
-      }
-
-      &:hover {
-        transform: scale(1.02);
-        padding-bottom: 0.2rem;
-        border-bottom: 1px solid #476e9a;
-      }
-    }
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   .center-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -88,6 +64,7 @@ body {
       letter-spacing: 1.7rem;
       margin: 1rem 0;
       padding: 0;
+      padding-left: 1.7rem;
       font-weight: 300;
 
       &:hover {
@@ -98,11 +75,9 @@ body {
   }
 
   .social-btn {
-    position: absolute;
-    left: 50%;
-    bottom: 8rem;
-    transform: translateX(-50%);
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     div {
       display: flex;
@@ -142,19 +117,15 @@ body {
   }
 
   .arrow {
-    position: absolute;
-    left: 50%;
-    bottom: 3rem;
-    transform: translateX(-50%);
     text-align: center;
     color: #fff;
     font-size: 3rem;
-    animation: arrow-move 2s infinite;
+    animation: arrow-move 4s infinite;
   }
 
   @keyframes arrow-move {
     50% {
-      transform: translate(-50%, 2rem);
+      transform: translate(0%, 4rem);
     }
   }
 }
@@ -584,6 +555,7 @@ body {
       width: 60rem;
       max-height: 80%;
       background-color: rgba(#3a3b3c, 0.9);
+      letter-spacing: normal;
       padding: 6rem;
       border-radius: 1rem;
       z-index: 18;
@@ -594,7 +566,6 @@ body {
         width: 95%;
         padding: 4rem;
         font-size: 1.4rem;
-        letter-spacing: normal;
       }
 
       p {
@@ -603,11 +574,7 @@ body {
         letter-spacing: 1px;
         margin: 0.5rem 0;
         color: #fff;
-
-        @media only screen and (max-width: 992px) {
-          letter-spacing: normal;
-          line-height: normal;
-        }
+        line-height: normal;
       }
 
       .form-container {
